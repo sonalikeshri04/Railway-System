@@ -48,9 +48,6 @@ body{
     align-items: center;
     justify-content: center;
 }
-#navbar ul{
-    padding-left: 4.9rem;
-}
 #navbar li
 {
     list-style: none;
