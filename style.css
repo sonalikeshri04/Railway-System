@@ -1,0 +1,754 @@
+@import url('https://fonts.googleapis.com/css2?family=Spartan:wght@100;200;300;400;500;600;700;800;900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Spartan',sans-serif;
+    scroll-behavior: smooth;
+}
+
+body{
+    width: 100%;
+}
+
+
+#header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px 24px 5px 5px; 
+    background:white;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.06);
+    z-index: 999;
+    position: sticky;
+    top: 0;
+    left: 0;
+    position: fixed;
+    
+}
+
+#header1{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px 110px 5px 125px; 
+    background:white;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.06);
+    z-index: 999;
+    position: sticky;
+    top: 0;
+    left: 0;
+    position: fixed;
+    
+}
+
+#navbar
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#navbar li
+{
+    list-style: none;
+    padding: 0 20px;
+    position: relative;
+}
+#navbar li a{
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 600;
+    color: #1a1a1a;
+    transition: 0.3s ease;
+}
+#navbar li a:hover,
+#navbar li a.active{
+    color: #f74311;
+}
+#navbar li a.active::after,
+#navbar li a:hover::after{
+    content: "";
+    width: 30%;
+    height: 2px;
+    background: #f74311;
+    position: absolute;
+    bottom: -4px;
+    left: 20px;
+}
+#hero 
+{
+        background-image: url(image/6213932.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 150vh;
+       
+}
+#hero h5{
+    color: black;
+    text-align: center;
+    padding-top: 500px;
+    font-size: 50px;
+}
+#hero span{
+    color: yellow;
+}
+#hero h2{
+    color: aliceblue;
+    text-align: center;
+    padding-top: 20px;
+}
+#hero button{
+    background-color:white;
+    border-radius: 80px;
+    color: #000909;
+    border: 0;
+    padding: 10px 50px 10px 50px;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    font-weight: 700;
+    font-size: 15 px;
+    align-items: center;
+}
+#hero .butt{
+    text-align: center;
+    padding-top: 40px;
+}
+
+#hero .butt:hover{
+    transform: scale(1.2);
+}
+
+#holiday{
+    padding-top: 50px;
+    font-size: 60px;
+    text-align: center;
+    padding-bottom: 30px;
+    
+}
+
+#holiday h5{
+    font-size: 40px;
+    font-weight: bold;
+}
+#holi{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 100vh;
+    padding: 0 35px;
+    
+}
+#holi .wrapper{
+    max-width: 1200px;
+    position:relative;
+}
+#holi .wrapper i{
+    height: 46px;
+    width: 46px;
+    top: 50%;
+    transform: translateY(-50%);
+    position: absolute;
+    text-align: center;
+    line-height: 46px;
+    background: #fff;
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 1.2rem;
+}
+
+#holi .wrapper i:first-child{
+    left: -23px;
+}
+#holi .wrapper i:last-child{
+    right: -23px;
+}
+#holi .wrapper .carousel{
+    white-space: nowrap;
+    font-size: 0px;
+    cursor: pointer;
+    overflow: hidden;
+    scroll-behavior: smooth;
+}
+
+.carousel.dragging{
+    cursor: grab;
+    scroll-behavior: auto;
+}
+
+.carousel.dragging img{
+    pointer-events: none;
+}
+.carousel img{
+    height: 340px;
+    object-fit: cover;
+    width: calc(100%/3);
+    margin-left: 14px;
+}
+.carousel img:first-child{
+    margin-left: 0px;
+}
+
+#about .aboutus{
+    padding-top: 50px;
+    text-align: center;
+    font-size: 60px;
+    padding-bottom: 70px;
+}
+
+#about .aboutus h4{
+    font-size: 30px;
+    text-align: left;
+    padding-left: 50px;
+    padding-top: 60px;
+    
+}
+
+#about .aboutus h6{
+    font-size: 40px;
+    font-weight: bold;
+}
+#about .aboutus h2{
+    text-align: left;
+    font-size: 30px;
+    padding-left: 50px;
+    padding-top: 10px;
+}
+
+#about .aboutus .box img{
+    float: right;
+    width: 40%;
+    padding-left: 20px;
+    padding-right: 60px;
+    
+}
+#about .aboutus .box{
+    font-size: 20px;
+    padding-top: 20px;
+    text-align: left;
+    padding-left: 50px;
+    
+}
+
+#about .aboutus .box .next{
+    padding-top:20px ;
+    padding-bottom: 30px;
+    padding-left: 40px;
+}
+#about .aboutus .box .next img{
+    width:7.5%;
+    float: left;
+
+}
+
+#about .aboutus .box button{
+    background-color:rgb(57, 156, 156);
+    color: #000909;
+    border: 5;
+    padding: 20px 20px 20px 20px;
+    cursor: pointer;
+    font-weight: 700;
+    font-size:  20px;
+    align-items: center;
+    text-align: center;
+
+}
+
+#about .aboutus .box button:hover{
+    background-color: rgb(61, 230, 137);
+}
+
+#services .service h2{
+    text-align: center;
+    padding-bottom: 60px;
+    padding-top: 20px;
+    font-size: 40px;
+    font-weight: bold;
+}
+
+#services .service img{
+    width: 7%;
+}
+#services .service p{
+    font-size: 15px;
+
+}
+#services .service h5{
+    font-weight: bold;
+    padding-top: 20px;
+    cursor: pointer;
+}
+
+#services .service h5:hover{
+    color: red;
+
+}
+
+#services .service .container{
+    display: flex;
+    flex-direction:column;
+    flex-wrap: nowrap;
+    border: 8px solid rgb(7, 7, 7);
+    box-sizing: content-box;
+    background-color: rgb(239, 253, 247);
+}
+
+#know{
+    padding-top: 80px;
+    padding-bottom: 50px;
+}
+
+#know .knows h2{
+    padding-bottom: 50px;
+    text-align: center;
+    font-size: 40px;
+    font-weight: bold;
+}
+
+#know .knows .but{
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-left:25px ;
+}
+
+#know .knows .but .first{
+    margin-right: 70px;
+    padding: 10px 15px 10px 15px;
+    border-radius: 25px;
+    
+}
+
+#know .knows .but .first:hover{
+    transform: scale(1.5);
+    border-color: rgb(105, 88, 145);
+    background-color:rgb(134, 194, 194);
+}
+
+#images .upload{
+    display:flex;
+    flex-wrap: wrap;
+}
+#images .example {
+    position: relative;
+    padding: 10px 10px 10px 10px;
+    width: 33%;
+    height: 30rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    cursor: pointer;
+    overflow: hidden;
+  }
+#images .example .content{
+  opacity: 0;
+  font-size: 40px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  color: #080909;
+  background-color: rgba(200, 200, 200, 0.5);
+  width: 100%;
+  height: 30rem;
+  -webkit-transition: all 400ms ease-out;
+  -moz-transition: all 400ms ease-out;
+  -o-transition: all 400ms ease-out;
+  -ms-transition: all 400ms ease-out;
+  transition: all 400ms ease-out;
+  text-align: center;
+}
+
+#images .example .content:hover {
+    opacity: 1;
+  }
+  
+#images .example .content .text {
+    height: 0;
+    opacity: 1;
+    transition-delay: 0s;
+    transition-duration: 0.4s;
+  }
+  
+#images .example .content:hover .text {
+    opacity: 1;
+    transform: translateY(250px);
+    -webkit-transform: translateY(250px);
+}
+
+#images .views{
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-left:25px ;
+    padding-top: 30px;
+    padding-bottom: 50px;
+}
+
+#images .views .view{
+    padding: 10px 30px 10px 30px;
+    color: #000909;
+    font-weight: bold;
+    background-color:rgb(57, 156, 156);
+    cursor: pointer;
+}
+
+
+#images .views .view:hover{
+    background-color:rgb(61, 230, 137);
+}
+#meals{
+    padding-bottom: 200px;
+}
+#meals h1{
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 20px;
+}
+
+#meals .Views{
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-left:25px ;
+    padding-top: 50px;
+    padding-bottom: 30px;
+}
+
+#meals .Views .viewer{
+    padding: 10px 30px 10px 30px;
+    color: #000909;
+    font-weight: bold;
+    background-color:rgb(57, 156, 156);
+    cursor: pointer;
+}
+
+
+#meals .Views .viewer:hover{
+    background-color:rgb(61, 230, 137);
+}
+
+
+footer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-top: 200px;
+    background-size: 100%;
+    background-image: url("./image/train10.jpg" );
+    background-repeat: no-repeat;
+    height: 46rem;
+}
+
+footer .col{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 20px;
+    padding-left:50px ;
+}
+footer h4{
+    font-size: 40px;
+    padding-bottom: 20px;
+    padding-left: 30px;
+}
+footer span{
+    font-size: 25px;
+}
+footer .follow{
+    margin-top: 20px;
+}
+
+
+footer .col4{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 40px;
+    padding-left: 20px;
+}
+
+footer .col4 .form{
+    padding-left: 20px;
+    color: white
+}
+
+footer .col4 input{
+    width:500px;
+    height: 48px;
+    border-color: white;
+    border-radius: 10px;
+    background-color: transparent;
+    box-shadow: 3px 3px 5px 0px rgba(0, 0, 0, 0.30);
+}
+
+
+footer .col5{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 40px;
+    padding-left: 20px;
+}
+
+footer .col5 .form{
+    padding-left: 20px;
+    color:white;
+    
+}
+footer .col5 input{
+    width:500px;
+    height: 115px;
+    background-color: transparent;
+    border-radius: 5px;
+    border-color: #fff;
+    box-shadow: 3px 3px 5px 0px rgba(0, 0, 0, 0.30);
+
+}
+
+footer .btn1{
+    padding-left: 35px;
+    padding-bottom: 20px;
+}
+
+footer .btn1 button{
+    width: 150px;
+    height: 45px;
+    border-radius: 5px;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    border-color: white;
+    color: white;
+    background-color: transparent;
+    box-shadow: 3px 3px 5px 0px rgba(0, 0, 0, 0.30);
+
+}
+
+footer .last{
+    padding-left: 550px;
+    padding-top: 12px;
+    color: white;
+}
+
+footer .last span{
+    font-size: 17px;
+}
+
+#hero1 .butts{
+    padding: 50px 20px 65px 110px;
+    box-sizing: border-box;
+    align-items: center;
+}
+
+#hero1 
+{
+        background-image: url(image/6213932.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 120vh;
+       
+}
+#hero1 h5{
+    color: black;
+    text-align: center;
+    padding-top: 400px;
+    font-size: 50px;
+}
+#hero1 span{
+    color: yellow;
+}
+#hero1 h2{
+    color: aliceblue;
+    text-align: center;
+    padding-top: 20px;
+}
+#hero1 button{
+    background-color:white;
+    border-radius: 80px;
+    color: #000909;
+    border: 0;
+    padding: 10px 50px 10px 50px;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    font-weight: 700;
+    font-size: 15 px;
+    align-items: center;
+}
+#hero1 .butt{
+    text-align: center;
+    padding-top: 40px;
+}
+
+#hero1 .butt:hover{
+    transform: scale(1.2);
+}
+
+.back-img {
+    background-image: url("./image/train1.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 105vh;
+}
+
+.wrapper1 {
+    position: relative;
+    width: 400px;
+    height: 440px;
+    background: transparent;
+    border: 2px solid rgba(255, 255, 255, .5);
+    border-radius: 20px;
+    backdrop-filter: blur(20px);
+    box-shadow: 0 0 30px rgba(0, 0, 0, .5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    transform: scale(0);
+    transition: transform .5s ease, height .2s ease;
+}
+
+.wrapper1.active-popup{
+    transform: scale(1);
+}
+
+.wrapper1.active{
+    height: 520px;
+}
+
+.wrapper1 .form-box {
+    width: 100%;
+    padding: 40px;
+}
+
+.wrapper1 .form-box.login{
+    transition: transform .18s ease;
+    transform: translateX(0);
+}
+
+.wrapper1.active .form-box.login{
+    transition: none;
+    transform: translateX(-400px);
+}
+
+.wrapper1 .form-box.register{
+    position: absolute;
+    transition: none;
+    transform: translateX(400px);
+}
+
+.wrapper1.active .form-box.register{
+    transition: transform .18s ease;
+    transform: translateX(0);
+}
+
+.form-box h2{
+    font-size: 2rem;
+    color: #162938;
+    text-align: center;
+}
+.input-box{
+    position: relative;
+    width: 100%;
+    height: 50px;
+    border-bottom:2px solid #162938;
+    margin: 30px 0;
+}
+.input-box label{
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    transform: translateY(-50%);
+    font-size: 1rem;
+    color: #162938;
+    font-weight: 500;
+    pointer-events: none;
+}
+
+.input-box input:focus~label,
+.input-box input:valid~label{
+    top: -5px;
+}
+.input-box input{
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    font-size: 1rem;
+    color: #162938;
+    font-weight: 600;
+    padding: 0 35px 0 5px;
+}
+.input-box .icon{
+    position: absolute;
+    right: 8px;
+    font-size: 1.2rem;
+    color: #162938;
+    line-height: 57px;
+}
+.remember-forgot{
+    font-size: .9rem;
+    color: #fff;
+    font-weight: 500;
+    margin: -15px 0 15px;
+    display: flex;
+    justify-content: space-between;
+}
+.remember-forgot label input{
+    accent-color: #162938;
+    margin-right: 3px;
+}
+.remember-forgot a{
+    color: #162938;
+    text-decoration: none;
+}
+.remember-forgot a:hover{
+    text-decoration: underline;
+}
+.btn{
+    width: 100%;
+    height: 45px;
+    background-color: #162938;
+    border: none;
+    outline: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 1rem;
+    color: #fff;
+    font-weight: 500;
+}
+.login-register{
+    font-size: .9rem;
+    color: #162938;
+    text-align: center;
+    font-weight: 500;
+    margin: 25px 0 10px;
+}
+.login-register p a{
+    color: #162938;
+    text-decoration: none;
+    font-weight: 600;
+}
+.login-register p a:hover{
+    text-decoration: underline;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
